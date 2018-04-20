@@ -25,6 +25,11 @@ app.prepare().then(() => {
     const params = route('/hello/:name')(parse(req.url).pathname);
     return app.render(req, res, '/hello', params);
   });
+  
+  server.get('/tilt/:input', (req, res) => {
+    const params = route('/tilt/:input')(parse(req.url).pathname);
+    return app.render(req, res, '/tilt', params);
+  });
 
   server.get('*', (req, res) => {
     return handle(req, res);

@@ -1,7 +1,7 @@
 import React from 'react'
 import { rehydrate, css } from 'glamor'
 import glamorous from 'glamorous'
-import Nav from '../components/NavComponent'
+import Nav from '../components/Nav'
 import Box from '../components/BasicBox'
 
 // Adds server generated styles to glamor cache.
@@ -16,11 +16,12 @@ export default () => {
 
   const basicStyles = {
     backgroundColor: 'white',
-    color: 'cornflowerblue',
+    color: 'black',
     border: '1px solid lightgreen',
+    borderRadius: 5,
     borderRight: 'none',
     borderBottom: 'none',
-    boxShadow: '5px 5px 0 0 lightgreen, 10px 10px 0 0 lightyellow',
+    boxShadow: '5px 5px 0 0 papayawhip, 10px 10px 0 0 palevioletred',
     transition: 'all 0.1s linear',
     margin: `3rem auto 3rem auto`,
     padding: `1rem 0.5rem`,
@@ -31,8 +32,8 @@ export default () => {
     ':hover': {
       color: 'white',
       backgroundColor: 'lightgray',
-      borderColor: 'aqua',
-      boxShadow: `-15px -15px 0 0 aqua, -30px -30px 0 0 cornflowerblue`
+      borderColor: 'orange',
+      boxShadow: `-15px -15px 0 0 #327223, -30px -30px 0 0 #841d20`
     },
     '& code': {
       backgroundColor: 'linen'
@@ -63,7 +64,7 @@ export default () => {
         With <code>:hover</code>.
       </Combined>
       <Animated>
-        Let's bounce.
+        Bounce for SSR!
       </Animated>
     </Box>
   )

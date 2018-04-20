@@ -7,6 +7,9 @@ const gridLayoutStyle = {
     gridTemplateAreas: `
       "header  header header"
       "sidebar content content"
+      "sidebar content content"
+      "sidebar content content"
+      "sidebar content content"
       "footer  footer  footer"
     `,
     width: '98vw',

@@ -10,7 +10,7 @@ class NavComponent extends React.Component{
   
 	render() {
 		return (
-			<nav style={{cursor:'pointer',userSelect:'none'}}>
+			<nav style={{cursor:'pointer',userSelect:'none',width:'100px',height:'150px'}}>
 				<div>
 					<div id="menuClick" onClick={this.burgerToggle}>></div>
 					<div className="narrowLinks" style={{display:'none'}}>
@@ -22,6 +22,11 @@ class NavComponent extends React.Component{
 						<Link href="/hello">
               <a onClick={this.burgerToggle} style={{textDecoration:'none',color:'#fff'}}>
                 Hello
+              </a>
+            </Link><br></br>
+            <Link href="/tilt">
+              <a onClick={this.burgerToggle} style={{textDecoration:'none',color:'#fff'}}>
+                Tilt
               </a>
             </Link>
 					</div>

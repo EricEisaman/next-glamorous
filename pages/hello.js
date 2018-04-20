@@ -4,7 +4,7 @@ import glamorous from 'glamorous'
 import Container from '../components/Container'
 import Grid from '../components/Grid'
 import Box from '../components/BasicBox'
-import Nav from '../components/NavComponent'
+import Nav from '../components/Nav'
 
 // Adds server generated styles to glamor cache.
 // Has to run before any `style()` calls
